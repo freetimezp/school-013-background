@@ -1,18 +1,212 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>School 013 — Colored Background Block</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Project</title>
-</head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
 
-<body>
-    start
+        <link rel="stylesheet" href="./assets/css/style.css" />
+    </head>
+    <body>
+        <div class="app-shell">
+            <header class="topbar">
+                <a href="#" class="brand">
+                    <span class="brand-mark">S</span>
+                    <span>CODE<span class="brand-light"> SCHOOL</span></span>
+                </a>
 
-    <script src="./assets/js/main.js"></script>
-</body>
+                <div class="topbar-right">
+                    <span class="course-label">HTML FOUNDATIONS</span>
+                    <span class="lesson-number">013</span>
+                </div>
+            </header>
 
+            <main class="lesson-layout">
+                <aside class="lesson-sidebar">
+                    <div class="sidebar-label">LEARNING PATH</div>
+
+                    <div class="sidebar-progress">
+                        <div class="progress-info">
+                            <span>HTML COURSE</span>
+                            <span>13 / 100</span>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-fill"></div>
+                        </div>
+                    </div>
+
+                    <nav class="lesson-nav">
+                        <a href="#" class="nav-item completed">
+                            <span class="nav-index">011</span>
+                            <span class="nav-name">Circle element</span>
+                            <span class="nav-status">✓</span>
+                        </a>
+
+                        <a href="#" class="nav-item completed">
+                            <span class="nav-index">012</span>
+                            <span class="nav-name">Figure & caption</span>
+                            <span class="nav-status">✓</span>
+                        </a>
+
+                        <a href="#" class="nav-item active">
+                            <span class="nav-index">013</span>
+                            <span class="nav-name">Background blocks</span>
+                            <span class="nav-status">●</span>
+                        </a>
+
+                        <a href="#" class="nav-item upcoming">
+                            <span class="nav-index">014</span>
+                            <span class="nav-name">Next lesson</span>
+                            <span class="nav-status">→</span>
+                        </a>
+                    </nav>
+
+                    <div class="sidebar-bottom">
+                        <div class="sidebar-note">
+                            <span class="note-icon">✦</span>
+                            <p>Small steps.<br />Creative skills.</p>
+                        </div>
+                    </div>
+                </aside>
+
+                <section class="lesson-content">
+                    <div class="lesson-intro">
+                        <div class="eyebrow">
+                            <span class="eyebrow-dot"></span>
+                            LESSON 013 · CSS VISUALS
+                        </div>
+
+                        <h1>Colored<br /><span>background block.</span></h1>
+
+                        <p class="intro-description">
+                            Every element is a canvas. Learn how color, space
+                            and dimensions transform a simple block into a
+                            visual component.
+                        </p>
+
+                        <div class="lesson-tags">
+                            <span>BACKGROUND</span>
+                            <span>WIDTH</span>
+                            <span>HEIGHT</span>
+                            <span>SPACING</span>
+                        </div>
+                    </div>
+
+                    <!-- COLOR PREVIEW -->
+                    <section class="preview-section">
+                        <div class="section-heading">
+                            <div>
+                                <span class="section-kicker"
+                                    >LIVE EXPERIMENT</span
+                                >
+                                <h2>Your first color block</h2>
+                            </div>
+
+                            <span class="experiment-number">EXPERIMENT 01</span>
+                        </div>
+
+                        <div class="preview-stage">
+                            <div class="preview-grid"></div>
+
+                            <div class="demo-block">
+                                <span class="block-label">HTML ELEMENT</span>
+                                <h3>Hello,<br />color.</h3>
+                                <p>I'm a simple div block.</p>
+                                <span class="block-size">240 × 180</span>
+                            </div>
+
+                            <span class="stage-caption">CSS IS VISUAL.</span>
+                        </div>
+
+                        <div class="color-controls">
+                            <span class="control-label">CHANGE COLOR</span>
+
+                            <button
+                                class="color-swatch active"
+                                data-color="#FF6B6B"
+                                aria-label="Coral color"
+                            ></button>
+                            <button
+                                class="color-swatch"
+                                data-color="#6C63FF"
+                                aria-label="Violet color"
+                            ></button>
+                            <button
+                                class="color-swatch"
+                                data-color="#54D6C7"
+                                aria-label="Mint color"
+                            ></button>
+                            <button
+                                class="color-swatch"
+                                data-color="#FFE066"
+                                aria-label="Yellow color"
+                            ></button>
+                            <button
+                                class="color-swatch"
+                                data-color="#FF8BCE"
+                                aria-label="Pink color"
+                            ></button>
+
+                            <span class="color-value">#FF6B6B</span>
+                        </div>
+                    </section>
+
+                    <!-- LESSON AREA -->
+                    <section class="lesson-section">
+                        <div class="section-heading">
+                            <div>
+                                <span class="section-kicker">THE CONCEPT</span>
+                                <h2>What makes a block?</h2>
+                            </div>
+                        </div>
+
+                        <div class="concept-card">
+                            <div class="concept-number">01</div>
+                            <div class="concept-text">
+                                <h3>Color creates a surface.</h3>
+                                <p>
+                                    A background color makes an element visually
+                                    stand out. We can use it to create cards,
+                                    banners, sections and buttons.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="concept-card">
+                            <div class="concept-number">02</div>
+                            <div class="concept-text">
+                                <h3>Dimensions create shape.</h3>
+                                <p>
+                                    Width and height determine how much space a
+                                    block occupies. A small box can become a
+                                    wide banner or a large panel.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="concept-card">
+                            <div class="concept-number">03</div>
+                            <div class="concept-text">
+                                <h3>Space creates balance.</h3>
+                                <p>
+                                    Padding adds space inside. Margin adds space
+                                    outside. Together they help elements
+                                    breathe.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+            </main>
+        </div>
+
+        <script src="./assets/js/main.js"></script>
+    </body>
 </html>
